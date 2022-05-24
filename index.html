@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with fish</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+  
+    <img class="one-fish fish" src="./Images/fish4.png" alt="#">
+    <img class="two-fish fish" src="./Images/fish5.png" alt="#">
+    <img class="three-fish fish" src="./Images/fish6.png" alt="#">
+    <img class="four-fish fish" src="./Images/fish7.png" alt="#">
+    <img class="five-fish fish" src="./Images/fish8.png" alt="#">
+    <img class="six-fish fish" src="./Images/fish9.png" alt="#">
+
+    <img class="bubbles one-bubble" src="./Images/bubbles1.png" alt="#">
+    <img class="bubbles two-bubble" src="./Images/bubbles4.png" alt="#">
+   
+  
+    <div class="block-form">
+    <form method="post" action="#" enctype="multipart/form-data">
+      <div class="block-form__field">
+        <span >Your name*</span>
+        <input required minlength="2" type="text" name = "username" value=""/>
+      </div>
+
+      <div class="block-form__field">
+        <span >Your phone*</span>
+        <input required type="tel" name = "phone" />
+      </div>
+
+      <div class="block-form__field">
+        <span >Your e-mail*</span>
+        <input required type="email" name = "email" />
+      </div>
+
+      <div class="block-form__field">
+        <span >Your age</span>
+        <input min="0" max="100" type="number" name = "age"/>
+      </div>
+
+      <div class="block-form__field">
+        <span >Your gender</span>
+        <input class="block-form__radio" type="radio" name="gender"/><span class="block-form__gender">Male</span>
+        <input class="block-form__radio" type="radio" name="gender"/><span class="block-form__gender">Female</span>
+        <input class="block-form__radio" type="radio" name="gender"/><span class="block-form__gender">Other</span>
+      </div>
+
+      <div class="block-form__field">
+        <span >Added file</span>
+        <input value="how is" type="file" name = "file"/>
+      </div>
+
+      <div class="block-form__field">
+        <span >How is your mood?</span>
+        <ul class="block-form__list">
+          <li>20%</li>
+          <li>40%</li>
+          <li>60%</li>
+          <li>80%</li>
+          <li>100%</li>
+        </ul>
+        <input class="block-form__range" min="1" max="5" type="range" name = "range"/>
+      </div>
+
+      <div class="block-form__field">
+        <span >Select city</span>
+        <select>
+          <option>New York</option>
+          <option>Toronto</option>
+          <option>Kiev</option>
+        </select>
+      </div>
+
+      <div class="block-form__field">
+        <span >Your message</span>
+        <textarea></textarea>
+      </div>
+
+      <button>send</button>
+      <button type="reset">clear</button>
+
+    </form>
+  </div>
+
+  
+    
+  
+  
+  <!--div>
+    <img class="bub" src="./Images/bubbles1.png" alt="#">
+    <img class="bub" src="./Images/bubbles4.png" alt="#">
+  </div-->
+
+
+</body>
+</html>
